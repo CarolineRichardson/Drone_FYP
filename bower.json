@@ -1,0 +1,16 @@
+{
+
+  "name": "FYP_Drone",
+  "version": "1.0.0",
+  "description": "OpenCV with a UAV(Drone)",
+  "main": "server.js",
+  "author": "Caroline Richardson",
+
+  "dependencies": 
+  {
+    "jquery": "*",
+    "bootstrap": "*",
+    "bootstrap-css" : "*"
+  }
+  
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/pilot.css">
+
+    <title>Pilot</title>
+  </head>
+
+  <body>
+
+    <div class="container" align="center">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand">FYP - Caroline Richardson</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/droneTracker" >Tracker Drone</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron" id="back" align="center" style="width:900px">
+        
+        <div id="dronestream" align="center" style="width:640px;height:360px">
+            <img style="width:640px;height:360px" img src="" id="pic" />
+        </div>
+
+        <!-- button group -->
+        <div class="btn-group btn-group-justified" style="max-width: 640px" align="center">
+          <!-- fly button 
+          <div class="btn-group" id="autoRoute">
+            <button type="button" class="btn btn-primary" align="center">Autonomous Flight</button>
+          </div>-->
+
+          <div class="btn-group" id="fly">
+            <button type="button" class="btn btn-primary btn-success active" align="center">Fly</button>
+          </div>
+          <!-- modal button for control info -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal" align="center">Controls
+            </button>
+            <div class="modal fade" id="mymodal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p> Controls</p>
+                  </div>
+                    <div class="modal-body">
+                      <p> T - Takeoff </p>
+                      <p> L - Land </p>
+                      <p> W - Forward </p>
+                      <p> A - Left </p>
+                      <p> S - Backward </p>
+                      <p> D - Right </p>
+                      <p> Left Arrow - Counter Clockwise </p>
+                      <p> Right Arrow- Clockwise </p>
+                      <p> C - Calibrate </p>
+                      <p> M - Wave </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- stop button -->
+          <div class="btn-group">
+            <button type="button" id="land" class="btn btn-primary btn-danger">Land</button>
+          </div>
+
+        </div> <!-- button group -->
+      </div> <!-- jumbotron -->
+    </div> <!-- main container -->
+
+
+    <!-- script inports -->
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/public/js/pilot.js"></script>
+
+  </body>
+</html>

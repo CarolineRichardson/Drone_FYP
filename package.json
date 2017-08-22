@@ -1,0 +1,24 @@
+{
+  
+  "name": "FYP_Drone",
+  "version": "1.0.0",
+  "description": "OpenCV with a UAV(Drone)",
+  "main": "server.js",
+  "author": "Caroline Richardson",
+
+  "dependencies": 
+  {
+    "ar-drone": "0.3.1",
+    "express": "3.0.x",
+    "nodecopter": "0.0.2",
+    "socket.io": "^1.7.2",
+    "opencv": "^6.0.0",
+    "ar-drone-png-stream": "*",
+    "ardrone-autonomy": "*",
+    "nodemon": "^1.2.1",
+    "jasmine-node": "^1.14.5",
+    "jasmine-node-karma": "^1.6.1",
+    "request": "^2.51.0"
+  }
+
+}
